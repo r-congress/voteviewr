@@ -1,0 +1,66 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+library(voteviewr)
+options(width = 90)
+```
+
+# voteviewr
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of voteviewr is to ...
+
+## Installation
+
+You can install the released version of voteviewr from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("voteviewr")
+```
+
+
+You can install the dev version of voteviewr from [Github](https://github.com) with:
+
+``` r
+if (!requireNamespace("remotes")) {
+  install.packages("remotes")
+}
+remotes::install_packages("r-congress/voteviewr")
+```
+
+## Import
+
+Import data from Voteview.com
+
+```{r}
+## read voteview data using defaults (both chambers of current congress)
+cng116 <- read_voteview()
+```
+
+## Data
+
+A tibble is returned
+
+```{r}
+## preview tibble
+cng116
+```
+
+More info on all returned variables
+
+```{r}
+## view object structure
+str(cng116)
+```

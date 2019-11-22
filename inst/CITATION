@@ -1,0 +1,28 @@
+citHeader("To cite voteviewr in publications use:")
+
+citEntry(
+  entry    = "misc",
+  title    = "Voteview: Congressional Roll-Call Votes Database",
+  author   = c(
+    person(family = "Lewis", given = "Jeffrey B."),
+    person(family = "Poole", given = "Keith"),
+    person(family = "Rosenthal", given = "Howard"),
+    person(family = "Boche", given = "Adam"),
+    person(family = "Rudkin", given = "Aaron"),
+    person(family = "Sonnet", given = "Luke")
+  ),
+  journal  = ,
+  year     = format(Sys.Date(), "%Y"),
+  volume   = ,
+  number   = ,
+  pages    = ,
+  url      = "https://voteview.com/",
+  textVersion = paste(
+     "Lewis, Jeffrey B., Keith Poole, Howard Rosenthal, Adam Boche,",
+     "Aaron Rudkin, and Luke Sonnet (2019). Voteview: Congressional",
+     "Roll-Call Votes Database. https://voteview.com/"
+  )
+)
+
+
+  (2019). .

@@ -1,0 +1,24 @@
+Package: voteviewr
+Title: Import DW-NOMINATE Data From 'Voteview'
+Version: 0.0.1
+Authors@R: c(
+    person("Michael W.", "Kearney", ,
+      email = "kearneymw@missouri.edu", role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0002-0730-4694"))
+    #person("Last", "First", ,
+    #  role = c("ctb"),
+    #  comment = c(ORCID = "0000-0000-0000-0000"))
+    )
+Description: Tools for importing data from 'Voteview'
+    <https://voteview.com/data'. Data include information such as
+    DW-NOMINATE scores (dimension estimates based on voting records) for
+    current and former members of the United States Congress. This package
+    makes it easy to download and read-in analysis-ready data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-us
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+Imports: 
+    readr
