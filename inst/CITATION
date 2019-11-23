@@ -1,7 +1,7 @@
 citHeader("To cite voteviewr in publications use:")
 
 citEntry(
-  entry    = "misc",
+  entry    = "manual",
   title    = "Voteview: Congressional Roll-Call Votes Database",
   author   = c(
     person(family = "Lewis", given = "Jeffrey B."),
@@ -11,11 +11,7 @@ citEntry(
     person(family = "Rudkin", given = "Aaron"),
     person(family = "Sonnet", given = "Luke")
   ),
-  journal  = ,
   year     = format(Sys.Date(), "%Y"),
-  volume   = ,
-  number   = ,
-  pages    = ,
   url      = "https://voteview.com/",
   textVersion = paste(
      "Lewis, Jeffrey B., Keith Poole, Howard Rosenthal, Adam Boche,",
@@ -23,6 +19,3 @@ citEntry(
      "Roll-Call Votes Database. https://voteview.com/"
   )
 )
-
-
-  (2019). .

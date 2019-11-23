@@ -5,9 +5,17 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.org/r-congress/voteviewr.svg?branch=master)](https://travis-ci.org/r-congress/voteviewr)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/r-congress/voteviewr?branch=master&svg=true)](https://ci.appveyor.com/project/r-congress/voteviewr)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/voteviewr)](https://CRAN.R-project.org/package=voteviewr)
 <!-- badges: end -->
 
-The goal of voteviewr is to …
+Get data from [Voteview.com](https://voteview.com/data)
 
 ## Installation
 
@@ -44,7 +52,7 @@ A tibble is returned
 ``` r
 ## preview tibble
 cng116
-#> # A tibble: 538 x 22
+#> # A tibble: 538 x 23
 #>    congress chamber icpsr state_icpsr district_code state_abbrev party_code occupancy
 #>       <dbl> <chr>   <dbl>       <dbl>         <dbl> <chr>             <dbl> <lgl>    
 #>  1      116 House   20301          41             3 AL                  200 NA       
@@ -57,11 +65,11 @@ cng116
 #>  8      116 House   14066          81             1 AK                  200 NA       
 #>  9      116 House   20305          61             3 AZ                  100 NA       
 #> 10      116 House   20902          61             2 AZ                  100 NA       
-#> # … with 528 more rows, and 14 more variables: last_means <lgl>, bioname <chr>,
+#> # … with 528 more rows, and 15 more variables: last_means <lgl>, bioname <chr>,
 #> #   bioguide_id <chr>, born <dbl>, died <lgl>, nominate_dim1 <dbl>, nominate_dim2 <dbl>,
 #> #   nominate_log_likelihood <dbl>, nominate_geo_mean_probability <dbl>,
 #> #   nominate_number_of_votes <dbl>, nominate_number_of_errors <dbl>, conditional <lgl>,
-#> #   nokken_poole_dim1 <dbl>, nokken_poole_dim2 <dbl>
+#> #   nokken_poole_dim1 <dbl>, nokken_poole_dim2 <dbl>, .timestamp <dttm>
 ```
 
 More info on all returned variables
@@ -69,7 +77,7 @@ More info on all returned variables
 ``` r
 ## view object structure
 str(cng116)
-#> Classes 'spec_tbl_df', 'tbl_df', 'tbl' and 'data.frame': 538 obs. of  22 variables:
+#> Classes 'spec_tbl_df', 'tbl_df', 'tbl' and 'data.frame': 538 obs. of  23 variables:
 #>  $ congress                     : num  116 116 116 116 116 116 116 116 116 116 ...
 #>  $ chamber                      : chr  "House" "House" "House" "House" ...
 #>  $ icpsr                        : num  20301 21102 21192 21193 21376 ...
@@ -92,6 +100,7 @@ str(cng116)
 #>  $ conditional                  : logi  NA NA NA NA NA NA ...
 #>  $ nokken_poole_dim1            : num  0.534 -0.408 0.339 0.781 0.708 0.666 0.422 0.353 -0.629 -0.369 ...
 #>  $ nokken_poole_dim2            : num  0.38 0.353 0.668 -0.4 0.149 0.124 0.657 0.178 -0.646 0.476 ...
+#>  $ .timestamp                   : POSIXct, format: "2019-11-22 18:17:41" "2019-11-22 18:17:41" ...
 #>  - attr(*, "spec")=
 #>   .. cols(
 #>   ..   congress = col_double(),

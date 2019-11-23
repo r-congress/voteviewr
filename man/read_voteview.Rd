@@ -5,7 +5,7 @@
 \title{Read Voteview data}
 \usage{
 read_voteview(chamber = c("both", "house", "senate"), congress = NULL,
-  year = NULL)
+  year = NULL, quiet = TRUE)
 }
 \arguments{
 \item{chamber}{Specify which chamber of Congress–default is "both"}
@@ -15,6 +15,8 @@ Congress.}
 
 \item{year}{Optionally instead of specifying congress you may specify a year
 or Date and the congress number will be inferred}
+
+\item{quiet}{Logical indicating whether to silence column parsing messages}
 }
 \value{
 A tibble of voteview information

@@ -14,6 +14,8 @@ Description: Tools for importing data from 'Voteview'
     DW-NOMINATE scores (dimension estimates based on voting records) for
     current and former members of the United States Congress. This package
     makes it easy to download and read-in analysis-ready data.
+Depends:
+    R (>= 3.1.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 Language: en-us
@@ -21,6 +23,9 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
 Imports: 
-    readr
+    readr,
+    utils
 URL: https://github.com/r-congress/voteviewr
 BugReports: https://github.com/r-congress/voteviewr/issues
+Suggests: 
+    testthat (>= 2.1.0)

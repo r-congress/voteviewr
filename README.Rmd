@@ -18,9 +18,13 @@ options(width = 90)
 # voteviewr
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.org/r-congress/voteviewr.svg?branch=master)](https://travis-ci.org/r-congress/voteviewr)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/r-congress/voteviewr?branch=master&svg=true)](https://ci.appveyor.com/project/r-congress/voteviewr)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/voteviewr)](https://CRAN.R-project.org/package=voteviewr)
 <!-- badges: end -->
 
-The goal of voteviewr is to ...
+Get data from [Voteview.com](https://voteview.com/data)
 
 ## Installation
 
