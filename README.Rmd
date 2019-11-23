@@ -46,12 +46,40 @@ remotes::install_packages("r-congress/voteviewr")
 
 ## Import
 
-Import data from Voteview.com
+Import Voteview data from the House and Senate for the 116th U.S. Congress
 
 ```{r}
-## read voteview data using defaults (both chambers of current congress)
+## read using defaults (both chambers of current congress)
 cng116 <- read_voteview()
 ```
+
+or get data from the House and Senate separately for the 115th U.S. Congress
+
+``` r
+## house 115th data
+h115 <- read_voteview("house", 115)
+
+## senate 115th data
+s115 <- read_voteview("senate", "115th")
+```
+
+or specify a session of Congress
+
+``` r
+## both chambers of 99th Congress
+cng99 <- read_voteview(99)
+
+##
+cng99 <- read_voteview(99, "senate")
+```
+
+or specify a year
+
+``` r
+## get data on the 99th Congress
+cng1961 <- read_voteview(1961)
+```
+
 
 ## Data
 

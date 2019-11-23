@@ -38,11 +38,40 @@ remotes::install_packages("r-congress/voteviewr")
 
 ## Import
 
-Import data from Voteview.com
+Import Voteview data from the House and Senate for the 116th U.S.
+Congress
 
 ``` r
-## read voteview data using defaults (both chambers of current congress)
+## read using defaults (both chambers of current congress)
 cng116 <- read_voteview()
+```
+
+or get data from the House and Senate separately for the 115th U.S.
+Congress
+
+``` r
+## house 115th data
+h115 <- read_voteview("house", 115)
+
+## senate 115th data
+s115 <- read_voteview("senate", "115th")
+```
+
+or specify a session of Congress
+
+``` r
+## both chambers of 99th Congress
+cng99 <- read_voteview(99)
+
+##
+cng99 <- read_voteview(99, "senate")
+```
+
+or specify a year
+
+``` r
+## get data on the 99th Congress
+cng1961 <- read_voteview(1961)
 ```
 
 ## Data
@@ -100,7 +129,7 @@ str(cng116)
 #>  $ conditional                  : logi  NA NA NA NA NA NA ...
 #>  $ nokken_poole_dim1            : num  0.534 -0.408 0.339 0.781 0.708 0.666 0.422 0.353 -0.629 -0.369 ...
 #>  $ nokken_poole_dim2            : num  0.38 0.353 0.668 -0.4 0.149 0.124 0.657 0.178 -0.646 0.476 ...
-#>  $ .timestamp                   : POSIXct, format: "2019-11-22 18:17:41" "2019-11-22 18:17:41" ...
+#>  $ .timestamp                   : POSIXct, format: "2019-11-22 23:49:27" "2019-11-22 23:49:27" ...
 #>  - attr(*, "spec")=
 #>   .. cols(
 #>   ..   congress = col_double(),

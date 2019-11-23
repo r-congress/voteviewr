@@ -47,10 +47,11 @@ read_voteview.integer <- function(chamber = c("both", "house", "senate"),
                                   quiet = TRUE) {
   if (chamber > 1000) {
     year <- as_year(chamber)
-    chamber <- if (is.character(year)) year else NULL
-  } else {
-    congress <- as_congress(chamber)
     chamber <- if (is.character(congress)) congress else NULL
+  } else {
+    congress2 <- as_congress(chamber)
+    chamber <- if (is.character(congress)) congress else NULL
+    congress <- congress2
   }
   read_voteview(chamber, congress, year, quiet)
 }
